@@ -34,7 +34,6 @@
     <tbody>
         @foreach($enquetes as $enquete)
         <tr>
-            <td>{{$enquete->id}}</td>
             <td>{{$enquete->titulo}}</td>
             
             @if (date("Y-m-d") < $enquete->data_inicio)  
