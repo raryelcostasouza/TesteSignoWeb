@@ -40,7 +40,7 @@
             @if (date("Y-m-d") < $enquete->data_inicio)  
                 <td>Não Iniciada</td>
             @elseif (date("Y-m-d") > $enquete->data_termino)
-                 <td>Encerrada<td>
+                 <td>Encerrada</td>
             @else
                    <td>Em Andamento</td>
             @endif
