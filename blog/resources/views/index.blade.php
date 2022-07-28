@@ -12,10 +12,20 @@
       {{ session()->get('success') }}  
     </div><br />
   @endif
+  <div class="card-body">
+    @if ($errors->any())
+      <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+      </div><br />
+      @endif
+  <h2>Sistema de Votação - Enquetes Cadastradas</h2>
   <table class="table table-striped">
     <thead>
         <tr>
-          <td>ID</td>
           <td>Título da Enquete</td>
           <td>Status</td>
           <td colspan="3">Ações</td>
