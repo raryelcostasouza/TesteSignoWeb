@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::resource('enquete', 'EnqueteController');
 Route::resource('votacao', 'VotacaoController');
-    return view('welcome');
-});*/
+Route::get('/', 'EnqueteController@index');
 
 Auth::routes();
 
