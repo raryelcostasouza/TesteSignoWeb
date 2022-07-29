@@ -62,7 +62,11 @@
                   </tr>
               </tbody>
           </table>
-          <button type="submit" class="btn btn-success">Registrar Voto</button>
+          @if ((date("Y-m-d") > $enquete->data_inicio) && ((date("Y-m-d") < $enquete->data_termino)))
+            <button type="submit" class="btn btn-success">Registrar Voto</button>
+          @else
+            <button type="submit" class="btn btn-success" disabled>Registrar Voto</button>
+          @endif
       </form>
   </div>
 </div>
