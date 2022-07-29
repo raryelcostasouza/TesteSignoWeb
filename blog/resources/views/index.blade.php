@@ -22,7 +22,7 @@
         </ul>
       </div><br />
       @endif
-  <h2>Sistema de Votação - Enquetes Cadastradas</h2>
+  <h3>Enquetes Cadastradas</h3>
   <table class="table table-striped">
     <thead>
         <tr>
