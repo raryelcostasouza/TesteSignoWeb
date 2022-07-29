@@ -11,4 +11,4 @@ Instruções de execução:
 * composer install && npm install
 * php artisan migrate
 * php artisan serve
-* Acessar https://localhost:8000/
+* Acessar http://localhost:8000/
