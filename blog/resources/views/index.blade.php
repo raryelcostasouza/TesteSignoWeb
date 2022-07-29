@@ -45,6 +45,7 @@
             @endif
             
            
+            <td><a href="{{ route('votacao.edit', $enquete->id)}}" class="btn btn-success">Votar</a></td>
             <td><a href="{{ route('enquete.edit', $enquete->id)}}" class="btn btn-primary">Editar</a></td>
             <td>
                 <form action="{{ route('enquete.destroy', $enquete->id)}}" method="post">
