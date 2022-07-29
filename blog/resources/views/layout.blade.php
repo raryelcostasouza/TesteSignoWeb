@@ -14,7 +14,8 @@
   <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
 </head>
 <body>
-  <div class="container">
+    @include('layouts.menu')
+    <div class="container">
     
     @yield('content')
   </div>
