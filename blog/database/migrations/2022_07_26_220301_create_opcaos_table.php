@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('opcaos', function (Blueprint $table) {
             $table->id();
             $table->integer('enquete_id');
-            //$table->foreign('enquete_id')->references('id')->on('enquete');
             $table->string('opcao_resposta');
             $table->integer('num_votos')->default(0);
             $table->timestamps();
