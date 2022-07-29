@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Enquete;
+use App\Models\Opcao;
 
 class EnqueteController extends Controller
 {
@@ -191,6 +192,10 @@ class EnqueteController extends Controller
     public function destroy($id)
     {
         $enquete = Enquete::findOrFail($id);
+        foreach($enquete->opcoes as $opcao)
+        {
+            $opcao->delete();
+        }
         $enquete->delete();
         return redirect('/enquete')->with('success', 'Enquete removida com êxito');
     }
